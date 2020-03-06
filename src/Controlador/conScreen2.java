@@ -19,11 +19,12 @@ public void keyPressed() {
 		Lo.anadirbalas();
 	}
 	if(app3.keyCode == PConstants.RIGHT) {
-		Lo.Move(1);
+		Lo.Moveder();
+		System.out.println("entro");
 	}
-	if(app3.keyCode == PConstants.LEFT) {
+	/*if(app3.keyCode == PConstants.LEFT) {
 		Lo.Move(-1);
-	}
+	}*/
 }
 
 }

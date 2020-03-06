@@ -7,14 +7,14 @@ import Controlador.conScreen2;
 public class screen2 {
 	private PApplet app2;
 	private int posX;
-	private int posY;
+	//private int posY;
 	conScreen2 CS2;
 	
 	
 public screen2(PApplet app2) {
 	this.app2 = app2;
 	this.posX = app2.width/2;
-	this.posY = posY;
+	//this.posY = posY;
 	this.CS2 = new conScreen2(app2);
 	
 }

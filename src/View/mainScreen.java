@@ -38,6 +38,7 @@ public void draw() {
 	case 2:
 		//background(0,0,255);
 		S2.drawInterface();
+		
 		/*fill(255);
 		textSize(30);
 		text("X: "+ mouseX + " Y: "+mouseY,mouseX,mouseY);*/
