@@ -31,5 +31,26 @@ public void arrow() {
 public int getposx() {
 	return Lo.getPosX();
 }
+public int getposYe() {
+	return Lo.posYe();
+	
+}
 
+public void setPosy(int posy) {
+	Lo.posyenemy(posy);
+}
+
+public int getposXe() {
+	return Lo.posXe();
+	
+}
+
+public void setPosx(int posx) {
+	Lo.posxenemy(posx);
+}
+
+
+public void enemyMove() {
+	Lo.ahiVa();
+}
 }

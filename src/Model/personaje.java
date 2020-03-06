@@ -36,6 +36,12 @@ public abstract class personaje  {
 		public void setTamanno(int tamanno) {
 			Tamanno = tamanno;
 		}
+
+		public void mover2() {
+			
+			
+			
+		}
 		
 		
 		

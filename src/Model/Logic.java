@@ -10,6 +10,7 @@ public class Logic{
 	ArrayList<personaje> Perso;
 	private int posYe=100;
 	private int posXe=10;
+	private int contador = 0;
 	
 	public  Logic(PApplet app5) {
 		Perso = new ArrayList <personaje>();
@@ -18,17 +19,25 @@ public class Logic{
 	}
 
 	private void crearArreglo() {
-		for(int i = 0;i<21;i++) {
-			if(i==0) {
-				Perso.add(new heroe(250,670));
-			}else {
+		Perso.add(new heroe(250,670));
+		for(int i = 1;i<25;i++) {
+			
+			
 				Perso.add(new enemigo(posXe,posYe));
-				posXe+=posXe+30;
-				posYe+=posYe+30;
+				posXe=posXe+50;
+				contador +=1;
+				
+				if(contador == 6) {
+					posYe=posYe+50;
+					posXe=10;
+					contador=0;
+				}
 			}
 		}
-		
-	}
+
+
+	
+	
 public void Move(int i) {
 		if(posx>40 && posx<660) {
 			posx=posx+i;
@@ -40,8 +49,41 @@ public void Move(int i) {
 			posx=posx+i;
 		}
 	}
+	
+
+
+
 	public int getPosX() {
 		return posx;
+	}
+	
+	
+	public void posyenemy(int posy) {
+		posYe=Perso.get(posy).getPosy();
+	}
+	
+	
+	public int posYe() {
+		return posYe;
+	}
+	
+	
+	public void posxenemy(int posx2) {
+		posXe=Perso.get(posx2).getPosx();
+	}
+	
+	
+	public int posXe() {
+		return posXe;
+	}
+	
+	
+	
+	public void ahiVa() {
+		for(int i=1;i<25;i++) {
+			Perso.get(i).mover2();
+		}
+		
 	}
 	public void anadirbalas() {
 		
