@@ -62,5 +62,12 @@ public void mouseClicked() {
 	
 		}
 }
+public void keyPressed() {
+	switch(pantalla) {
+	case 2:
+		S2.arrows();
+		break;
+	}
+}
 
 }

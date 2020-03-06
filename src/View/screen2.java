@@ -29,7 +29,7 @@ public void drawInterface() {
 public void drawHeroe() {
 	app2.fill(0,0,255);
 	app2.rectMode(PConstants.CENTER);
-	app2.rect(posX,app2.height-30,40,20);
+	app2.rect(CS2.getposx(),app2.height-30,40,20);
 }
 public void drawEnemy() {
 	app2.fill(255,0,0);
@@ -42,12 +42,9 @@ public void drawBullet() {
 	app2.ellipse(posX,469,15,15);
 }
 
-public int getPosX() {
-	return posX;
+public void arrows() {
+	CS2.arrow();
 }
 
-public void setPosX(int posX) {
-	this.posX = posX;
-}
 
 }
